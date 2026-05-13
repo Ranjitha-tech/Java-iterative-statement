@@ -1,0 +1,19 @@
+class PascalTriangle{
+    public static void main(String[]args)
+    {
+        int rows = 5;  // Number of rows
+
+        for (int i = 0; i < rows; i++) {
+            int num = 1;
+            for (int j = 0; j < rows - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k <= i; k++) {
+                System.out.print(num + " ");
+                num = num * (i - k) / (k + 1);  // Formula for next value
+            }
+
+            System.out.println();  
+        }
+    }
+}
