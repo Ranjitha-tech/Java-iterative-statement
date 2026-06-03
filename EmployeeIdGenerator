@@ -1,0 +1,25 @@
+class Employee {
+    static int nextId = 1001;
+
+    int empId;
+    String name;
+
+    Employee(String name) {
+        this.name = name;
+        empId = nextId++;
+    }
+
+    void display() {
+        System.out.println(empId + " - " + name);
+    }
+}
+
+public class EmployeeIdGenerator {
+    public static void main(String[] args) {
+        Employee e1 = new Employee("Ravi");
+        Employee e2 = new Employee("Anu");
+
+        e1.display();
+        e2.display();
+    }
+}
