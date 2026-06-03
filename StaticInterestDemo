@@ -1,0 +1,26 @@
+class Bank {
+    static double interestRate = 7.5;
+
+    String customerName;
+    double amount;
+
+    Bank(String customerName, double amount) {
+        this.customerName = customerName;
+        this.amount = amount;
+    }
+
+    void calculateInterest() {
+        double interest = amount * interestRate / 100;
+        System.out.println(customerName + " Interest: " + interest);
+    }
+}
+
+public class StaticInterestDemo {
+    public static void main(String[] args) {
+        Bank b1 = new Bank("Ranjitha", 50000);
+        Bank b2 = new Bank("Kiran", 70000);
+
+        b1.calculateInterest();
+        b2.calculateInterest();
+    }
+}
