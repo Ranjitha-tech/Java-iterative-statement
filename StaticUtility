@@ -1,0 +1,16 @@
+class Calculator {
+    static int square(int n) {
+        return n * n;
+    }
+
+    static int cube(int n) {
+        return n * n * n;
+    }
+}
+
+public class StaticUtility {
+    public static void main(String[] args) {
+        System.out.println("Square: " + Calculator.square(5));
+        System.out.println("Cube: " + Calculator.cube(5));
+    }
+}
