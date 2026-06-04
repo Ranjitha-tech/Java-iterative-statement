@@ -1,0 +1,23 @@
+class StudentStatic {
+    static int attendance;
+
+    static {
+        System.out.println("Attendance System Activated");
+    }
+
+    {
+        attendance++;
+    }
+
+    Student(String name) {
+        System.out.println(name + " Present");
+    }
+
+    public static void main(String[] args) {
+        new Student("Ram");
+        new Student("Sita");
+        new Student("Anu");
+
+        System.out.println("Total Present: " + attendance);
+    }
+}
