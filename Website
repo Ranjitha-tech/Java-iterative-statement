@@ -1,0 +1,22 @@
+class Website {
+    static int visitors;
+
+    static {
+        visitors = 1000;
+        System.out.println("Website Started");
+    }
+
+    {
+        visitors++;
+    }
+
+    Website() {
+        System.out.println("Visitor Count: " + visitors);
+    }
+
+    public static void main(String[] args) {
+        new Website();
+        new Website();
+        new Website();
+    }
+}
