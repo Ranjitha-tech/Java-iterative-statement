@@ -1,0 +1,24 @@
+class EmployeeStatic {
+    static int idCounter;
+
+    static {
+        idCounter = 5000;
+        System.out.println("Employee Database Loaded");
+    }
+
+    int empId;
+
+    {
+        empId = ++idCounter;
+    }
+
+    Employee(String name) {
+        System.out.println(name + " -> ID: " + empId);
+    }
+
+    public static void main(String[] args) {
+        new Employee("Ravi");
+        new Employee("Priya");
+        new Employee("Asha");
+    }
+}
