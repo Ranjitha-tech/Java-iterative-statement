@@ -1,0 +1,23 @@
+class VehicleStatic {
+    static int regNo;
+
+    static {
+        regNo = 100;
+    }
+
+    int vehicleNo;
+
+    {
+        vehicleNo = ++regNo;
+    }
+
+    Vehicle(String type) {
+        System.out.println(type + " Registered -> " + vehicleNo);
+    }
+
+    public static void main(String[] args) {
+        new Vehicle("Car");
+        new Vehicle("Bike");
+        new Vehicle("Bus");
+    }
+}
