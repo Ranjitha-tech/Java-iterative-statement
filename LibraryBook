@@ -1,0 +1,23 @@
+class LibraryBook {
+    static int totalBooks;
+
+    static {
+        totalBooks = 0;
+    }
+
+    {
+        totalBooks++;
+    }
+
+    LibraryBook(String title) {
+        System.out.println(title + " Added");
+    }
+
+    public static void main(String[] args) {
+        new LibraryBook("Java");
+        new LibraryBook("Python");
+        new LibraryBook("DSA");
+
+        System.out.println("Total Books: " + totalBooks);
+    }
+}
