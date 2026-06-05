@@ -1,0 +1,24 @@
+class Employee {
+    String name;
+    String designation;
+
+    Employee(String name, String designation) {
+        this.name = name;
+        this.designation = designation;
+    }
+}
+
+public class PromotionSystem {
+
+    static void promote(Employee emp) {
+        emp.designation = "Senior Developer";
+    }
+
+    public static void main(String[] args) {
+        Employee emp = new Employee("Kiran", "Developer");
+
+        promote(emp);
+
+        System.out.println(emp.name + " - " + emp.designation);
+    }
+}
