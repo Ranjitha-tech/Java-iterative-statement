@@ -1,0 +1,25 @@
+class Team {
+    String name;
+    int score;
+
+    Team(String name) {
+        this.name = name;
+    }
+}
+
+public class CricketMatch {
+
+    static void addRuns(Team team, int runs) {
+        team.score += runs;
+    }
+
+    public static void main(String[] args) {
+        Team team = new Team("India");
+
+        addRuns(team, 4);
+        addRuns(team, 6);
+        addRuns(team, 2);
+
+        System.out.println(team.name + " Score: " + team.score);
+    }
+}
