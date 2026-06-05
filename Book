@@ -1,0 +1,20 @@
+class Book {
+    String title;
+    boolean available = true;
+}
+
+public class LibraryManagement {
+
+    static void issueBook(Book book) {
+        book.available = false;
+    }
+
+    public static void main(String[] args) {
+        Book book = new Book();
+        book.title = "Java Programming";
+
+        issueBook(book);
+
+        System.out.println(book.title + " Available: " + book.available);
+    }
+}
