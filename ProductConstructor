@@ -1,0 +1,21 @@
+class ProductConstructor {
+    String productName;
+    int quantity;
+    double price;
+
+    Product(String p, int q, double pr) {
+        productName = p;
+        quantity = q;
+        price = pr;
+    }
+
+    void bill() {
+        System.out.println("Product: " + productName);
+        System.out.println("Total Bill: ₹" + (quantity * price));
+    }
+
+    public static void main(String[] args) {
+        Product p = new Product("Headphones", 2, 899);
+        p.bill();
+    }
+}
