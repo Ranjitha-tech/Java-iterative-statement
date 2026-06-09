@@ -1,0 +1,25 @@
+class DroneLauncher {
+    String droneId;
+    int batteryLevel;
+
+    DroneLauncher() {
+        droneId = "DRN-101";
+        batteryLevel = 100;
+    }
+
+    void launch() {
+        System.out.println(droneId + " launched successfully!");
+    }
+
+    void displayStatus() {
+        System.out.println("Battery Level: " + batteryLevel + "%");
+    }
+}
+
+public class DroneLauncherDemo {
+    public static void main(String[] args) {
+        DroneLauncher drone = new DroneLauncher();
+        drone.launch();
+        drone.displayStatus();
+    }
+}
