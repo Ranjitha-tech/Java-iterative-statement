@@ -1,0 +1,26 @@
+class SmartDevice {
+    String deviceName;
+    boolean status;
+
+    SmartDevice() {
+        deviceName = "Smart Bulb";
+        status = false;
+    }
+
+    void turnOn() {
+        status = true;
+        System.out.println(deviceName + " is ON");
+    }
+
+    void showStatus() {
+        System.out.println("Status: " + (status ? "ON" : "OFF"));
+    }
+}
+
+public class SmartHomeDemo {
+    public static void main(String[] args) {
+        SmartDevice device = new SmartDevice();
+        device.showStatus();
+        device.turnOn();
+    }
+}
