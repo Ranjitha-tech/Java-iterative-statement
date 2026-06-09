@@ -1,0 +1,21 @@
+class WeatherStation {
+    double temperature;
+    double humidity;
+
+    WeatherStation() {
+        temperature = 28.5;
+        humidity = 65.0;
+    }
+
+    void report() {
+        System.out.println("Temperature: " + temperature + "°C");
+        System.out.println("Humidity: " + humidity + "%");
+    }
+}
+
+public class WeatherDemo {
+    public static void main(String[] args) {
+        WeatherStation station = new WeatherStation();
+        station.report();
+    }
+}
