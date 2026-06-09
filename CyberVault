@@ -1,0 +1,26 @@
+class CyberVault {
+    String vaultName;
+    boolean locked;
+
+    CyberVault() {
+        vaultName = "SecureVault";
+        locked = true;
+    }
+
+    void unlockVault() {
+        locked = false;
+        System.out.println(vaultName + " unlocked.");
+    }
+
+    void showStatus() {
+        System.out.println("Locked: " + locked);
+    }
+}
+
+public class CyberVaultDemo {
+    public static void main(String[] args) {
+        CyberVault vault = new CyberVault();
+        vault.showStatus();
+        vault.unlockVault();
+    }
+}
