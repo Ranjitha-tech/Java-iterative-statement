@@ -1,0 +1,21 @@
+class EcoSensor {
+    double airQualityIndex;
+    String location;
+
+    EcoSensor() {
+        airQualityIndex = 42.5;
+        location = "Green Zone";
+    }
+
+    void displayData() {
+        System.out.println("Location: " + location);
+        System.out.println("AQI: " + airQualityIndex);
+    }
+}
+
+public class EcoSensorDemo {
+    public static void main(String[] args) {
+        EcoSensor sensor = new EcoSensor();
+        sensor.displayData();
+    }
+}
