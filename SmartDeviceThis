@@ -1,0 +1,22 @@
+class SmartDeviceThis {
+    String deviceName;
+    int version;
+
+    SmartDevice() {
+        this("AI Assistant", 1);
+    }
+
+    SmartDevice(String deviceName, int version) {
+        this.deviceName = deviceName;
+        this.version = version;
+    }
+
+    void showDetails() {
+        System.out.println(deviceName + " Version " + version);
+    }
+
+    public static void main(String[] args) {
+        SmartDevice d = new SmartDevice();
+        d.showDetails();
+    }
+}
