@@ -1,0 +1,18 @@
+class UniversityPortal {
+    String universityName = "Tech University";
+
+    class Department {
+        String universityName = "Computer Science Department";
+
+        void display() {
+            System.out.println("Department: " + this.universityName);
+            System.out.println("University: " + UniversityPortal.this.universityName);
+        }
+    }
+
+    public static void main(String[] args) {
+        UniversityPortal u = new UniversityPortal();
+        UniversityPortal.Department d = u.new Department();
+        d.display();
+    }
+}
