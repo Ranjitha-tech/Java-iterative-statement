@@ -1,0 +1,16 @@
+class BankAccountDemo {
+    int balance = 5000;
+
+    BankAccountDemo getAccount() {
+        return this;
+    }
+
+    void showBalance() {
+        System.out.println("Balance: ₹" + balance);
+    }
+
+    public static void main(String[] args) {
+        BankAccountDemo acc = new BankAccountDemo();
+        acc.getAccount().showBalance();
+    }
+}
