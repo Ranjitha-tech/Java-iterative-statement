@@ -1,0 +1,30 @@
+class CodingJourney {
+    String skill = "";
+
+    CodingJourney learnJava() {
+        skill += "Java ";
+        return this;
+    }
+
+    CodingJourney learnPython() {
+        skill += "Python ";
+        return this;
+    }
+
+    CodingJourney learnAI() {
+        skill += "AI";
+        return this;
+    }
+
+    void showSkills() {
+        System.out.println("Skills: " + skill);
+    }
+
+    public static void main(String[] args) {
+        new CodingJourney()
+                .learnJava()
+                .learnPython()
+                .learnAI()
+                .showSkills();
+    }
+}
