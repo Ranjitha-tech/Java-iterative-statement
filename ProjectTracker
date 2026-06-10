@@ -1,0 +1,15 @@
+class ProjectTracker {
+
+    void display(ProjectTracker obj) {
+        System.out.println("Current object passed successfully.");
+    }
+
+    void sendObject() {
+        display(this);
+    }
+
+    public static void main(String[] args) {
+        ProjectTracker p = new ProjectTracker();
+        p.sendObject();
+    }
+}
