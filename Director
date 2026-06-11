@@ -1,0 +1,36 @@
+class Director {
+    String directorName;
+
+    Director(String directorName) {
+        this.directorName = directorName;
+    }
+
+    void directMovie() {
+        System.out.println(directorName + " is directing a movie.");
+    }
+}
+
+class MovieStudio {
+    String studioName;
+    Director director;
+
+    MovieStudio(String studioName, Director director) {
+        this.studioName = studioName;
+        this.director = director;
+    }
+
+    void showStudioDetails() {
+        System.out.println("Studio: " + studioName);
+        director.directMovie();
+    }
+}
+
+public class MovieStudioDemo {
+    public static void main(String[] args) {
+        Director director = new Director("Arjun Rao");
+
+        MovieStudio studio = new MovieStudio("CineWave Productions", director);
+
+        studio.showStudioDetails();
+    }
+}
