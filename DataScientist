@@ -1,0 +1,23 @@
+class DataScientist {
+    String company = "TechVision";
+
+    void work() {
+        System.out.println("Employee is working.");
+    }
+}
+
+class DataScientist extends Employee {
+    void analyzeData() {
+        System.out.println("Analyzing large datasets.");
+    }
+}
+
+public class DataScientistDemo {
+    public static void main(String[] args) {
+        DataScientist ds = new DataScientist();
+
+        System.out.println("Company: " + ds.company);
+        ds.work();
+        ds.analyzeData();
+    }
+}
