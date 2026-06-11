@@ -1,0 +1,20 @@
+class SmartWatch {
+    void powerOn() {
+        System.out.println("Device is powered on.");
+    }
+}
+
+class Smartwatch extends Device {
+    void trackSteps() {
+        System.out.println("Tracking daily steps.");
+    }
+}
+
+public class SmartwatchDemo {
+    public static void main(String[] args) {
+        Smartwatch watch = new Smartwatch();
+
+        watch.powerOn();
+        watch.trackSteps();
+    }
+}
