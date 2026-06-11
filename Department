@@ -1,0 +1,36 @@
+class Department {
+    String departmentName;
+
+    Department(String departmentName) {
+        this.departmentName = departmentName;
+    }
+
+    void showDepartment() {
+        System.out.println("Department: " + departmentName);
+    }
+}
+
+class University {
+    String universityName;
+    Department department;
+
+    University(String universityName, Department department) {
+        this.universityName = universityName;
+        this.department = department;
+    }
+
+    void displayInfo() {
+        System.out.println("University: " + universityName);
+        department.showDepartment();
+    }
+}
+
+public class UniversityDepartmentDemo {
+    public static void main(String[] args) {
+        Department dept = new Department("Artificial Intelligence");
+
+        University uni = new University("FutureTech University", dept);
+
+        uni.displayInfo();
+    }
+}
