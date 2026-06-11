@@ -1,0 +1,33 @@
+class Processor {
+    String model;
+
+    Processor(String model) {
+        this.model = model;
+    }
+
+    void showProcessor() {
+        System.out.println("Processor: " + model);
+    }
+}
+
+class Laptop {
+    Processor processor;
+
+    Laptop(Processor processor) {
+        this.processor = processor;
+    }
+
+    void displayLaptop() {
+        System.out.println("Laptop Specifications");
+        processor.showProcessor();
+    }
+}
+
+public class LaptopProcessorDemo {
+    public static void main(String[] args) {
+        Processor p = new Processor("Intel Core i7");
+
+        Laptop laptop = new Laptop(p);
+        laptop.displayLaptop();
+    }
+}
