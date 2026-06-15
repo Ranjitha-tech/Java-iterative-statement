@@ -1,0 +1,27 @@
+class BatteryUnit {
+    int capacity;
+
+    BatteryUnit(int capacity) {
+        this.capacity = capacity;
+    }
+}
+
+class SmartMobile {
+    String model;
+    BatteryUnit battery;
+
+    SmartMobile(String model, BatteryUnit battery) {
+        this.model = model;
+        this.battery = battery;
+    }
+
+    void specifications() {
+        System.out.println(model + " battery capacity: " + battery.capacity + "mAh");
+    }
+
+    public static void main(String[] args) {
+        BatteryUnit b = new BatteryUnit(5000);
+        SmartMobile m = new SmartMobile("Galaxy X", b);
+        m.specifications();
+    }
+}
