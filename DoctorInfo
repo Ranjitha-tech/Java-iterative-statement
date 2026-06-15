@@ -1,0 +1,27 @@
+class DoctorInfo {
+    String doctorName;
+
+    DoctorInfo(String doctorName) {
+        this.doctorName = doctorName;
+    }
+}
+
+class HospitalCenter {
+    String hospitalName;
+    DoctorInfo doctor;
+
+    HospitalCenter(String hospitalName, DoctorInfo doctor) {
+        this.hospitalName = hospitalName;
+        this.doctor = doctor;
+    }
+
+    void showDetails() {
+        System.out.println(hospitalName + " has Dr. " + doctor.doctorName);
+    }
+
+    public static void main(String[] args) {
+        DoctorInfo d = new DoctorInfo("Kiran");
+        HospitalCenter h = new HospitalCenter("City Care", d);
+        h.showDetails();
+    }
+}
