@@ -1,0 +1,27 @@
+class EmployeeCard {
+    int empId;
+
+    EmployeeCard(int empId) {
+        this.empId = empId;
+    }
+}
+
+class TechCompany {
+    String companyName;
+    EmployeeCard employee;
+
+    TechCompany(String companyName, EmployeeCard employee) {
+        this.companyName = companyName;
+        this.employee = employee;
+    }
+
+    void displayInfo() {
+        System.out.println(companyName + " employee ID: " + employee.empId);
+    }
+
+    public static void main(String[] args) {
+        EmployeeCard e = new EmployeeCard(501);
+        TechCompany c = new TechCompany("InnovateTech", e);
+        c.displayInfo();
+    }
+}
