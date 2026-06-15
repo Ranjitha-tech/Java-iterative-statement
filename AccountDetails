@@ -1,0 +1,27 @@
+class AccountDetails {
+    double balance;
+
+    AccountDetails(double balance) {
+        this.balance = balance;
+    }
+}
+
+class SecureBank {
+    String bankName;
+    AccountDetails account;
+
+    SecureBank(String bankName, AccountDetails account) {
+        this.bankName = bankName;
+        this.account = account;
+    }
+
+    void accountInfo() {
+        System.out.println(bankName + " account balance: ₹" + account.balance);
+    }
+
+    public static void main(String[] args) {
+        AccountDetails a = new AccountDetails(25000);
+        SecureBank b = new SecureBank("National Bank", a);
+        b.accountInfo();
+    }
+}
