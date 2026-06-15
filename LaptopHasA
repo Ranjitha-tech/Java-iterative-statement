@@ -1,0 +1,27 @@
+class LaptopHasA {
+    String brand;
+
+    Laptop(String brand) {
+        this.brand = brand;
+    }
+}
+
+class StudentProfile {
+    String name;
+    Laptop laptop;
+
+    StudentProfile(String name, Laptop laptop) {
+        this.name = name;
+        this.laptop = laptop;
+    }
+
+    void display() {
+        System.out.println(name + " owns a " + laptop.brand + " laptop.");
+    }
+
+    public static void main(String[] args) {
+        Laptop l = new Laptop("Dell");
+        StudentProfile s = new StudentProfile("Ranjitha", l);
+        s.display();
+    }
+}
