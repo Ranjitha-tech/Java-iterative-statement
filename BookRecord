@@ -1,0 +1,27 @@
+class BookRecord {
+    String title;
+
+    BookRecord(String title) {
+        this.title = title;
+    }
+}
+
+class LibraryHub {
+    String libraryName;
+    BookRecord book;
+
+    LibraryHub(String libraryName, BookRecord book) {
+        this.libraryName = libraryName;
+        this.book = book;
+    }
+
+    void showBook() {
+        System.out.println(libraryName + " contains book: " + book.title);
+    }
+
+    public static void main(String[] args) {
+        BookRecord b = new BookRecord("Java Fundamentals");
+        LibraryHub l = new LibraryHub("Knowledge Hub", b);
+        l.showBook();
+    }
+}
