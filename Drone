@@ -1,0 +1,20 @@
+class Drone {
+    void takeOff() {
+        System.out.println("Drone taking off.");
+    }
+}
+
+class DeliveryDrone extends Drone {
+    void deliverPackage() {
+        System.out.println("Package delivered.");
+    }
+}
+
+public class DroneDeliveryDemo {
+    public static void main(String[] args) {
+        DeliveryDrone drone = new DeliveryDrone();
+
+        drone.takeOff();
+        drone.deliverPackage();
+    }
+}
