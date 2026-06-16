@@ -1,0 +1,29 @@
+class ExamUser {
+    void login() {
+        System.out.println("User logged in.");
+    }
+}
+
+class Candidate extends ExamUser {
+    void takeExam() {
+        System.out.println("Exam started.");
+    }
+}
+
+class Examiner extends ExamUser {
+    void evaluatePaper() {
+        System.out.println("Evaluating answers.");
+    }
+}
+
+public class OnlineExamDemo {
+    public static void main(String[] args) {
+        Candidate student = new Candidate();
+        student.login();
+        student.takeExam();
+
+        Examiner teacher = new Examiner();
+        teacher.login();
+        teacher.evaluatePaper();
+    }
+}
