@@ -1,0 +1,20 @@
+class Subscription {
+    void activate() {
+        System.out.println("Subscription activated.");
+    }
+}
+
+class PremiumSubscription extends Subscription {
+    void watch4K() {
+        System.out.println("Watching content in 4K.");
+    }
+}
+
+public class OTTDemo {
+    public static void main(String[] args) {
+        PremiumSubscription user = new PremiumSubscription();
+
+        user.activate();
+        user.watch4K();
+    }
+}
