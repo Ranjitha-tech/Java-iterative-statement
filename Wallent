@@ -1,0 +1,20 @@
+class Wallet {
+    void checkBalance() {
+        System.out.println("Checking balance.");
+    }
+}
+
+class RewardWallet extends Wallet {
+    void redeemPoints() {
+        System.out.println("Redeeming reward points.");
+    }
+}
+
+public class DigitalWalletDemo {
+    public static void main(String[] args) {
+        RewardWallet wallet = new RewardWallet();
+
+        wallet.checkBalance();
+        wallet.redeemPoints();
+    }
+}
