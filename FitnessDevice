@@ -1,0 +1,20 @@
+class FitnessDevice {
+    void trackSteps() {
+        System.out.println("Tracking steps.");
+    }
+}
+
+class SmartWatch extends FitnessDevice {
+    void monitorHeartRate() {
+        System.out.println("Monitoring heart rate.");
+    }
+}
+
+public class FitnessTrackerDemo {
+    public static void main(String[] args) {
+        SmartWatch watch = new SmartWatch();
+
+        watch.trackSteps();
+        watch.monitorHeartRate();
+    }
+}
