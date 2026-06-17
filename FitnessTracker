@@ -1,0 +1,34 @@
+class FitnessTracker {
+    String userName;
+    int steps;
+
+    FitnessTracker() {
+        userName = "User";
+        steps = 0;
+    }
+
+    FitnessTracker(String userName) {
+        this.userName = userName;
+        steps = 0;
+    }
+
+    FitnessTracker(String userName, int steps) {
+        this.userName = userName;
+        this.steps = steps;
+    }
+
+    void report() {
+        System.out.println("User: " + userName);
+        System.out.println("Steps: " + steps);
+    }
+
+    public static void main(String[] args) {
+        FitnessTracker f1 = new FitnessTracker();
+        FitnessTracker f2 = new FitnessTracker("Ranjitha");
+        FitnessTracker f3 = new FitnessTracker("Rahul", 8500);
+
+        f1.report();
+        f2.report();
+        f3.report();
+    }
+}
