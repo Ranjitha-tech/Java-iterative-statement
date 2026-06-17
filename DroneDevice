@@ -1,0 +1,34 @@
+class DroneDevice {
+    String model;
+    int altitude;
+
+    DroneDevice() {
+        model = "Basic";
+        altitude = 100;
+    }
+
+    DroneDevice(String model) {
+        this.model = model;
+        altitude = 100;
+    }
+
+    DroneDevice(String model, int altitude) {
+        this.model = model;
+        this.altitude = altitude;
+    }
+
+    void details() {
+        System.out.println("Model: " + model);
+        System.out.println("Altitude: " + altitude);
+    }
+
+    public static void main(String[] args) {
+        DroneDevice d1 = new DroneDevice();
+        DroneDevice d2 = new DroneDevice("Explorer");
+        DroneDevice d3 = new DroneDevice("ProFly", 500);
+
+        d1.details();
+        d2.details();
+        d3.details();
+    }
+}
