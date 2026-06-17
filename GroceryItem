@@ -1,0 +1,34 @@
+class GroceryItem {
+    String itemName;
+    double price;
+
+    GroceryItem() {
+        itemName = "Rice";
+        price = 50.0;
+    }
+
+    GroceryItem(String itemName) {
+        this.itemName = itemName;
+        price = 50.0;
+    }
+
+    GroceryItem(String itemName, double price) {
+        this.itemName = itemName;
+        this.price = price;
+    }
+
+    void showItem() {
+        System.out.println("Item: " + itemName);
+        System.out.println("Price: " + price);
+    }
+
+    public static void main(String[] args) {
+        GroceryItem g1 = new GroceryItem();
+        GroceryItem g2 = new GroceryItem("Sugar");
+        GroceryItem g3 = new GroceryItem("Oil", 180.50);
+
+        g1.showItem();
+        g2.showItem();
+        g3.showItem();
+    }
+}
