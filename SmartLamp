@@ -1,0 +1,34 @@
+class SmartLamp {
+    String color;
+    int brightness;
+
+    SmartLamp() {
+        color = "White";
+        brightness = 50;
+    }
+
+    SmartLamp(String color) {
+        this.color = color;
+        brightness = 50;
+    }
+
+    SmartLamp(String color, int brightness) {
+        this.color = color;
+        this.brightness = brightness;
+    }
+
+    void display() {
+        System.out.println("Color: " + color);
+        System.out.println("Brightness: " + brightness);
+    }
+
+    public static void main(String[] args) {
+        SmartLamp s1 = new SmartLamp();
+        SmartLamp s2 = new SmartLamp("Blue");
+        SmartLamp s3 = new SmartLamp("Red", 90);
+
+        s1.display();
+        s2.display();
+        s3.display();
+    }
+}
