@@ -1,0 +1,34 @@
+class LibraryCard {
+    String memberName;
+    int booksIssued;
+
+    LibraryCard() {
+        memberName = "Guest";
+        booksIssued = 0;
+    }
+
+    LibraryCard(String memberName) {
+        this.memberName = memberName;
+        booksIssued = 0;
+    }
+
+    LibraryCard(String memberName, int booksIssued) {
+        this.memberName = memberName;
+        this.booksIssued = booksIssued;
+    }
+
+    void showCard() {
+        System.out.println("Member: " + memberName);
+        System.out.println("Books Issued: " + booksIssued);
+    }
+
+    public static void main(String[] args) {
+        LibraryCard l1 = new LibraryCard();
+        LibraryCard l2 = new LibraryCard("Ranjitha");
+        LibraryCard l3 = new LibraryCard("Anjali", 4);
+
+        l1.showCard();
+        l2.showCard();
+        l3.showCard();
+    }
+}
