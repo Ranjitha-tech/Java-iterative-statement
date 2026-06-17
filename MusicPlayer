@@ -1,0 +1,34 @@
+class MusicPlayer {
+    String song;
+    int volume;
+
+    MusicPlayer() {
+        song = "Unknown";
+        volume = 20;
+    }
+
+    MusicPlayer(String song) {
+        this.song = song;
+        volume = 20;
+    }
+
+    MusicPlayer(String song, int volume) {
+        this.song = song;
+        this.volume = volume;
+    }
+
+    void play() {
+        System.out.println("Song: " + song);
+        System.out.println("Volume: " + volume);
+    }
+
+    public static void main(String[] args) {
+        MusicPlayer p1 = new MusicPlayer();
+        MusicPlayer p2 = new MusicPlayer("Shape of You");
+        MusicPlayer p3 = new MusicPlayer("Believer", 80);
+
+        p1.play();
+        p2.play();
+        p3.play();
+    }
+}
