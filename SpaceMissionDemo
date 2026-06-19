@@ -1,0 +1,21 @@
+class Mission {
+    String missionName = "Moon Explorer";
+}
+
+class Rocket extends Mission {
+    String rocketName = "Falcon";
+}
+
+class SpaceCraft extends Rocket {
+    void display() {
+        System.out.println("Mission: " + super.missionName);
+        System.out.println("Rocket: " + rocketName);
+    }
+}
+
+public class SpaceMissionDemo {
+    public static void main(String[] args) {
+        SpaceCraft sc = new SpaceCraft();
+        sc.display();
+    }
+}
