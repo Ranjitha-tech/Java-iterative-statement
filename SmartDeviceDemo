@@ -1,0 +1,25 @@
+class Device {
+    String brand = "Samsung";
+
+    void powerOn() {
+        System.out.println("Device Powered On");
+    }
+}
+
+class SmartPhone extends Device {
+    String brand = "OnePlus";
+
+    void showDetails() {
+        System.out.println("Phone Brand: " + brand);
+        System.out.println("Parent Brand: " + super.brand);
+
+        super.powerOn();
+    }
+}
+
+public class SmartDeviceDemo {
+    public static void main(String[] args) {
+        SmartPhone phone = new SmartPhone();
+        phone.showDetails();
+    }
+}
