@@ -1,0 +1,18 @@
+class LibraryBookDemo {
+    LibraryItem() {
+        System.out.println("Library Item Created");
+    }
+}
+
+class Book extends LibraryItem {
+    Book() {
+        super();
+        System.out.println("Book Added to Library");
+    }
+}
+
+public class LibraryBookDemo {
+    public static void main(String[] args) {
+        Book b = new Book();
+    }
+}
