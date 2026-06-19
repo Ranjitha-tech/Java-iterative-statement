@@ -1,0 +1,18 @@
+class UniversityStudentDemo {
+    University(String name) {
+        System.out.println("University: " + name);
+    }
+}
+
+class Student extends University {
+    Student(String universityName, String studentName) {
+        super(universityName);
+        System.out.println("Student: " + studentName);
+    }
+}
+
+public class UniversityStudentDemo {
+    public static void main(String[] args) {
+        Student s = new Student("VTU", "Ranjitha");
+    }
+}
