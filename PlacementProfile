@@ -1,0 +1,22 @@
+class PlacementProfile {
+    String skill;
+    int mockScore;
+
+    PlacementProfile() {
+        this("Java", 85);
+    }
+
+    PlacementProfile(String skill, int mockScore) {
+        this.skill = skill;
+        this.mockScore = mockScore;
+
+        System.out.println("Primary Skill: " + skill);
+        System.out.println("Mock Score: " + mockScore);
+    }
+}
+
+public class PlacementPortalDemo {
+    public static void main(String[] args) {
+        new PlacementProfile();
+    }
+}
