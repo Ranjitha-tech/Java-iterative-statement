@@ -1,0 +1,22 @@
+class InternshipTracker {
+    String company;
+    String role;
+
+    InternshipTracker() {
+        this("VStand4U Technologies", "Java Full Stack Intern");
+    }
+
+    InternshipTracker(String company, String role) {
+        this.company = company;
+        this.role = role;
+
+        System.out.println("Company: " + company);
+        System.out.println("Role: " + role);
+    }
+}
+
+public class InternshipTrackerDemo {
+    public static void main(String[] args) {
+        new InternshipTracker();
+    }
+}
