@@ -1,0 +1,22 @@
+class LibraryMember {
+    String name;
+    int memberId;
+
+    LibraryMember() {
+        this("Ranjitha", 101);
+    }
+
+    LibraryMember(String name, int memberId) {
+        this.name = name;
+        this.memberId = memberId;
+
+        System.out.println("Member Name: " + name);
+        System.out.println("Member ID: " + memberId);
+    }
+}
+
+public class LibrarySystemDemo {
+    public static void main(String[] args) {
+        new LibraryMember();
+    }
+}
