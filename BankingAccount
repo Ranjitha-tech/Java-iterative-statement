@@ -1,0 +1,22 @@
+class BankingAccount {
+    String accountHolder;
+    double balance;
+
+    BankingAccount() {
+        this("Akash", 10000);
+    }
+
+    BankingAccount(String accountHolder, double balance) {
+        this.accountHolder = accountHolder;
+        this.balance = balance;
+
+        System.out.println("Account Holder: " + accountHolder);
+        System.out.println("Balance: " + balance);
+    }
+}
+
+public class BankingPortalDemo {
+    public static void main(String[] args) {
+        new BankingAccount();
+    }
+}
