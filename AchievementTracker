@@ -1,0 +1,22 @@
+class AchievementTracker {
+    String badge;
+    int points;
+
+    AchievementTracker() {
+        this("Problem Solver", 500);
+    }
+
+    AchievementTracker(String badge, int points) {
+        this.badge = badge;
+        this.points = points;
+
+        System.out.println("Badge Earned: " + badge);
+        System.out.println("Points: " + points);
+    }
+}
+
+public class AchievementTrackerDemo {
+    public static void main(String[] args) {
+        new AchievementTracker();
+    }
+}
