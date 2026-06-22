@@ -1,0 +1,22 @@
+class CourseRegistration {
+    String courseName;
+    int duration;
+
+    CourseRegistration() {
+        this("Java Full Stack", 6);
+        System.out.println("Default Constructor");
+    }
+
+    CourseRegistration(String courseName, int duration) {
+        this.courseName = courseName;
+        this.duration = duration;
+        System.out.println("Course: " + courseName);
+        System.out.println("Duration: " + duration + " Months");
+    }
+}
+
+public class CourseRegistrationDemo {
+    public static void main(String[] args) {
+        new CourseRegistration();
+    }
+}
