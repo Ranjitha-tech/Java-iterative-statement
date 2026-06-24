@@ -1,0 +1,23 @@
+class EmployeeRoleDemo {
+    void role() {
+        System.out.println("Employee works in an organization.");
+    }
+}
+
+class Manager extends Employee {
+    void role() {
+        System.out.println("Manager supervises employees.");
+    }
+
+    void showRoles() {
+        role();
+        super.role();
+    }
+}
+
+public class EmployeeRoleDemo {
+    public static void main(String[] args) {
+        Manager m = new Manager();
+        m.showRoles();
+    }
+}

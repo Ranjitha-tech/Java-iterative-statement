@@ -1,0 +1,19 @@
+class DeliveryService {
+    void deliver() {
+        System.out.println("Delivering order...");
+    }
+}
+
+class FoodDelivery extends DeliveryService {
+    @Override
+    void deliver() {
+        System.out.println("Food delivered in 30 minutes.");
+    }
+}
+
+public class FoodDeliveryApp {
+    public static void main(String[] args) {
+        DeliveryService service = new FoodDelivery();
+        service.deliver();
+    }
+}
