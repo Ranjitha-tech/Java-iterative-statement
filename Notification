@@ -1,0 +1,19 @@
+class Notification {
+    void sendNotification() {
+        System.out.println("Sending notification.");
+    }
+}
+
+class EmailNotification extends Notification {
+    @Override
+    void sendNotification() {
+        System.out.println("Email notification sent successfully.");
+    }
+}
+
+public class NotificationCenter {
+    public static void main(String[] args) {
+        Notification notification = new EmailNotification();
+        notification.sendNotification();
+    }
+}
