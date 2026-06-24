@@ -1,0 +1,19 @@
+class Appliance {
+    void operate() {
+        System.out.println("Appliance is operating.");
+    }
+}
+
+class SmartFan extends Appliance {
+    @Override
+    void operate() {
+        System.out.println("Smart fan adjusts speed automatically.");
+    }
+}
+
+public class SmartFanController {
+    public static void main(String[] args) {
+        Appliance fan = new SmartFan();
+        fan.operate();
+    }
+}
