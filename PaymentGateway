@@ -1,0 +1,19 @@
+class PaymentGateway {
+    void processPayment() {
+        System.out.println("Processing payment...");
+    }
+}
+
+class UpiPayment extends PaymentGateway {
+    @Override
+    void processPayment() {
+        System.out.println("UPI payment processed successfully.");
+    }
+}
+
+public class UpiTransactionDemo {
+    public static void main(String[] args) {
+        PaymentGateway payment = new UpiPayment();
+        payment.processPayment();
+    }
+}
