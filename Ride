@@ -1,0 +1,19 @@
+class Ride {
+    void rideType() {
+        System.out.println("Standard ride selected.");
+    }
+}
+
+class PremiumRide extends Ride {
+    @Override
+    void rideType() {
+        System.out.println("Premium luxury ride selected.");
+    }
+}
+
+public class RideBookingSystem {
+    public static void main(String[] args) {
+        Ride ride = new PremiumRide();
+        ride.rideType();
+    }
+}
