@@ -1,0 +1,23 @@
+class SecureBankAccount {
+    private double balance;
+
+    public void deposit(double amount) {
+        if (amount > 0) {
+            balance += amount;
+        }
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class SecureBankAccountDemo {
+    public static void main(String[] args) {
+        SecureBankAccount account = new SecureBankAccount();
+
+        account.deposit(5000);
+
+        System.out.println("Balance: " + account.getBalance());
+    }
+}
