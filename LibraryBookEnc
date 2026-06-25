@@ -1,0 +1,32 @@
+class LibraryBook {
+    private String bookTitle;
+    private String author;
+
+    public void setBookTitle(String bookTitle) {
+        this.bookTitle = bookTitle;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getBookTitle() {
+        return bookTitle;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+}
+
+public class LibraryBookDemo {
+    public static void main(String[] args) {
+        LibraryBook book = new LibraryBook();
+
+        book.setBookTitle("Java Programming");
+        book.setAuthor("James Gosling");
+
+        System.out.println("Book: " + book.getBookTitle());
+        System.out.println("Author: " + book.getAuthor());
+    }
+}
