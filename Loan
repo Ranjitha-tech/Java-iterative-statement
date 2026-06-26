@@ -1,0 +1,28 @@
+class Loan {
+
+    private int age;
+    private double salary;
+
+    Loan(int age, double salary) {
+        this.age = age;
+        this.salary = salary;
+    }
+
+    public void checkEligibility() {
+
+        if (age >= 21 && salary >= 30000)
+            System.out.println("Loan Approved");
+        else
+            System.out.println("Loan Rejected");
+    }
+}
+
+public class LoanEligibilityVerifier {
+
+    public static void main(String[] args) {
+
+        Loan applicant = new Loan(25, 45000);
+
+        applicant.checkEligibility();
+    }
+}
