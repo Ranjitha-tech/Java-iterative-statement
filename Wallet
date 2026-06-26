@@ -1,0 +1,32 @@
+class Wallet {
+
+    private double balance = 2500;
+
+    public void addMoney(double amount) {
+        balance += amount;
+    }
+
+    public void spendMoney(double amount) {
+        if (amount <= balance)
+            balance -= amount;
+        else
+            System.out.println("Insufficient Balance");
+    }
+
+    public void walletInfo() {
+        System.out.println("Current Balance : ₹" + balance);
+    }
+}
+
+public class DigitalWalletTracker {
+
+    public static void main(String[] args) {
+
+        Wallet user = new Wallet();
+
+        user.walletInfo();
+        user.addMoney(500);
+        user.spendMoney(1200);
+        user.walletInfo();
+    }
+}
