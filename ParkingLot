@@ -1,0 +1,34 @@
+class ParkingLot {
+    private int totalSlots = 10;
+    private int occupiedSlots = 4;
+
+    public void parkVehicle() {
+        if (occupiedSlots < totalSlots) {
+            occupiedSlots++;
+            System.out.println("Vehicle Parked Successfully.");
+        } else {
+            System.out.println("Parking Full.");
+        }
+    }
+
+    public void leaveVehicle() {
+        if (occupiedSlots > 0) {
+            occupiedSlots--;
+            System.out.println("Vehicle Left Parking.");
+        }
+    }
+
+    public void displayStatus() {
+        System.out.println("Available Slots : " + (totalSlots - occupiedSlots));
+    }
+}
+
+public class SmartParkingManager {
+    public static void main(String[] args) {
+        ParkingLot p = new ParkingLot();
+
+        p.displayStatus();
+        p.parkVehicle();
+        p.displayStatus();
+    }
+}
