@@ -1,0 +1,30 @@
+class MovieTicket {
+
+    private int availableSeats = 40;
+
+    public void bookTicket(int seats) {
+
+        if (seats <= availableSeats) {
+            availableSeats -= seats;
+            System.out.println(seats + " Tickets Booked.");
+        } else {
+            System.out.println("Seats Not Available.");
+        }
+    }
+
+    public void seatStatus() {
+        System.out.println("Remaining Seats : " + availableSeats);
+    }
+}
+
+public class CinemaBookingPortal {
+
+    public static void main(String[] args) {
+
+        MovieTicket ticket = new MovieTicket();
+
+        ticket.seatStatus();
+        ticket.bookTicket(5);
+        ticket.seatStatus();
+    }
+}
