@@ -1,0 +1,27 @@
+class Attendance {
+
+    private int totalDays = 30;
+    private int presentDays = 26;
+
+    public void attendancePercentage() {
+
+        double percentage = (presentDays * 100.0) / totalDays;
+
+        System.out.println("Attendance : " + percentage + "%");
+
+        if (percentage >= 75)
+            System.out.println("Eligible for Exam");
+        else
+            System.out.println("Not Eligible");
+    }
+}
+
+public class AttendanceAnalyzer {
+
+    public static void main(String[] args) {
+
+        Attendance emp = new Attendance();
+
+        emp.attendancePercentage();
+    }
+}
