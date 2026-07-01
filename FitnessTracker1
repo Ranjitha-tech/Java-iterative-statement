@@ -1,0 +1,18 @@
+class FitnessTracker {
+    public int steps = 0;
+
+    public void walk(int count) {
+        steps += count;
+    }
+}
+
+public class FitnessDemo {
+    public static void main(String[] args) {
+
+        FitnessTracker tracker = new FitnessTracker();
+
+        tracker.walk(3500);
+
+        System.out.println("Today's Steps: " + tracker.steps);
+    }
+}
