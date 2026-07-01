@@ -1,0 +1,25 @@
+class LibraryBook {
+
+    protected String title = "Java Mastery";
+
+    protected void displayBook() {
+        System.out.println("Book Title: " + title);
+    }
+}
+
+class DigitalLibrary extends LibraryBook {
+
+    public void accessBook() {
+        displayBook();
+    }
+}
+
+public class LibraryDemo {
+
+    public static void main(String[] args) {
+
+        DigitalLibrary library = new DigitalLibrary();
+
+        library.accessBook();
+    }
+}
