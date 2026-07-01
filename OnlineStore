@@ -1,0 +1,18 @@
+class OnlineStore {
+
+    String product = "Wireless Mouse"; // Default Access
+
+    void displayProduct() {
+        System.out.println("Available Product: " + product);
+    }
+}
+
+public class StoreDemo {
+
+    public static void main(String[] args) {
+
+        OnlineStore store = new OnlineStore();
+
+        store.displayProduct();
+    }
+}
