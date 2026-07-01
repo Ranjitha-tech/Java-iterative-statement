@@ -1,0 +1,29 @@
+class MovieTicket {
+
+    private int availableSeats = 50;
+
+    public void bookSeat(int seats) {
+
+        if (seats <= availableSeats) {
+            availableSeats -= seats;
+            System.out.println(seats + " seat(s) booked.");
+        } else {
+            System.out.println("Seats not available.");
+        }
+    }
+
+    public void showAvailableSeats() {
+        System.out.println("Remaining Seats: " + availableSeats);
+    }
+}
+
+public class TicketDemo {
+
+    public static void main(String[] args) {
+
+        MovieTicket ticket = new MovieTicket();
+
+        ticket.bookSeat(4);
+        ticket.showAvailableSeats();
+    }
+}
