@@ -1,0 +1,30 @@
+class BankLocker {
+
+    private String lockerPin = "4521";
+
+    protected String owner = "Ranjitha";
+
+    public void verifyPin(String enteredPin) {
+
+        if (lockerPin.equals(enteredPin)) {
+            System.out.println("Access Granted");
+        } else {
+            System.out.println("Wrong PIN");
+        }
+    }
+
+    void displayOwner() {
+        System.out.println("Locker Owner: " + owner);
+    }
+}
+
+public class LockerDemo {
+
+    public static void main(String[] args) {
+
+        BankLocker locker = new BankLocker();
+
+        locker.verifyPin("4521");
+        locker.displayOwner();
+    }
+}
