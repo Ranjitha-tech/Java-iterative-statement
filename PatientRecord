@@ -1,0 +1,34 @@
+class PatientRecord {
+    private String patientName;
+    private int age;
+
+    public void setPatientName(String patientName) {
+        this.patientName = patientName;
+    }
+
+    public String getPatientName() {
+        return patientName;
+    }
+
+    public void setAge(int age) {
+        if (age > 0)
+            this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+}
+
+public class HospitalApp {
+    public static void main(String[] args) {
+
+        PatientRecord patient = new PatientRecord();
+
+        patient.setPatientName("Rahul");
+        patient.setAge(24);
+
+        System.out.println(patient.getPatientName());
+        System.out.println(patient.getAge());
+    }
+}
