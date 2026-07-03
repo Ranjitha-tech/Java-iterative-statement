@@ -1,0 +1,36 @@
+class MovieTicket {
+
+    private String movieName;
+    private int seatsBooked;
+
+    public void setMovieName(String movieName) {
+        this.movieName = movieName;
+    }
+
+    public String getMovieName() {
+        return movieName;
+    }
+
+    public void bookSeats(int seats) {
+        if (seats > 0)
+            seatsBooked = seats;
+    }
+
+    public int getSeatsBooked() {
+        return seatsBooked;
+    }
+}
+
+public class BookingApp {
+
+    public static void main(String[] args) {
+
+        MovieTicket ticket = new MovieTicket();
+
+        ticket.setMovieName("Interstellar");
+        ticket.bookSeats(3);
+
+        System.out.println(ticket.getMovieName());
+        System.out.println(ticket.getSeatsBooked());
+    }
+}
