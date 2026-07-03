@@ -1,0 +1,25 @@
+class SmartThermostat {
+
+    private double temperature;
+
+    public void setTemperature(double temperature) {
+        if (temperature >= 16 && temperature <= 30)
+            this.temperature = temperature;
+    }
+
+    public double getTemperature() {
+        return temperature;
+    }
+}
+
+public class SmartHome {
+
+    public static void main(String[] args) {
+
+        SmartThermostat room = new SmartThermostat();
+
+        room.setTemperature(24);
+
+        System.out.println("Room Temperature : " + room.getTemperature() + "°C");
+    }
+}
