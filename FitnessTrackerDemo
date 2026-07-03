@@ -1,0 +1,37 @@
+class FitnessTracker {
+
+    private int steps;
+    private double caloriesBurned;
+
+    public void setSteps(int steps) {
+        if (steps >= 0)
+            this.steps = steps;
+    }
+
+    public int getSteps() {
+        return steps;
+    }
+
+    public void setCaloriesBurned(double caloriesBurned) {
+        if (caloriesBurned >= 0)
+            this.caloriesBurned = caloriesBurned;
+    }
+
+    public double getCaloriesBurned() {
+        return caloriesBurned;
+    }
+}
+
+public class FitnessApp {
+
+    public static void main(String[] args) {
+
+        FitnessTracker tracker = new FitnessTracker();
+
+        tracker.setSteps(8500);
+        tracker.setCaloriesBurned(430.5);
+
+        System.out.println("Steps : " + tracker.getSteps());
+        System.out.println("Calories : " + tracker.getCaloriesBurned());
+    }
+}
