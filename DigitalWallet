@@ -1,0 +1,33 @@
+class DigitalWallet {
+    private String walletOwner;
+    private double balance;
+
+    public void setWalletOwner(String walletOwner) {
+        this.walletOwner = walletOwner;
+    }
+
+    public String getWalletOwner() {
+        return walletOwner;
+    }
+
+    public void addMoney(double amount) {
+        if (amount > 0)
+            balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+
+public class WalletDemo {
+    public static void main(String[] args) {
+        DigitalWallet wallet = new DigitalWallet();
+
+        wallet.setWalletOwner("Ranjitha");
+        wallet.addMoney(5000);
+
+        System.out.println("Owner : " + wallet.getWalletOwner());
+        System.out.println("Balance : ₹" + wallet.getBalance());
+    }
+}
