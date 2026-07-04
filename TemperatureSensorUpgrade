@@ -1,0 +1,12 @@
+public class TemperatureSensorUpgrade {
+
+    public static void main(String[] args) {
+
+        short roomTemperature = 28;
+
+        float temperature = roomTemperature;
+
+        System.out.println("Room Temperature : " + roomTemperature);
+        System.out.println("Float Temperature : " + temperature);
+    }
+}
