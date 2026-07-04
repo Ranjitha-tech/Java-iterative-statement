@@ -1,0 +1,12 @@
+public class VehicleSpeedAnalyzer {
+
+    public static void main(String[] args) {
+
+        int bikeSpeed = 78;
+
+        double recordedSpeed = bikeSpeed;
+
+        System.out.println("Bike Speed : " + bikeSpeed + " km/h");
+        System.out.println("Recorded Speed : " + recordedSpeed + " km/h");
+    }
+}
