@@ -1,0 +1,12 @@
+public class AttendancePercentageUpgrade {
+
+    public static void main(String[] args) {
+
+        byte attendance = 92;
+
+        double attendancePercentage = attendance;
+
+        System.out.println("Attendance : " + attendance);
+        System.out.println("Attendance Percentage : " + attendancePercentage);
+    }
+}
