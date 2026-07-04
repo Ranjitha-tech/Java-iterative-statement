@@ -1,0 +1,12 @@
+public class FuelCapacityConverter {
+
+    public static void main(String[] args) {
+
+        char fuelLevel = 'L';
+
+        int asciiValue = fuelLevel;
+
+        System.out.println("Fuel Level Symbol : " + fuelLevel);
+        System.out.println("ASCII Value : " + asciiValue);
+    }
+}
