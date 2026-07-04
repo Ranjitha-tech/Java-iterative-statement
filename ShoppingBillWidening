@@ -1,0 +1,16 @@
+public class ShoppingBillWidening {
+
+    public static void main(String[] args) {
+
+        byte pencilPrice = 15;
+        short notebookPrice = 120;
+
+        int totalAmount = pencilPrice + notebookPrice;
+
+        double finalBill = totalAmount;
+
+        System.out.println("Pencil Price : " + pencilPrice);
+        System.out.println("Notebook Price : " + notebookPrice);
+        System.out.println("Final Bill : " + finalBill);
+    }
+}
