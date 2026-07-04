@@ -1,0 +1,12 @@
+public class EmployeeBonusPromotion {
+
+    public static void main(String[] args) {
+
+        int bonus = 8500;
+
+        long yearlyBonus = bonus;
+
+        System.out.println("Monthly Bonus : " + bonus);
+        System.out.println("Yearly Bonus Data Type : " + yearlyBonus);
+    }
+}
