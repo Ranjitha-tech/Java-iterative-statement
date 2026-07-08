@@ -1,0 +1,19 @@
+class MissionControl {
+    void monitorMission() {
+        System.out.println("Monitoring standard mission parameters.");
+    }
+}
+
+class MarsMissionControl extends MissionControl {
+    @Override
+    void monitorMission() {
+        System.out.println("Monitoring Mars mission with advanced telemetry.");
+    }
+}
+
+public class SpaceMissionOverride {
+    public static void main(String[] args) {
+        MissionControl mission = new MarsMissionControl();
+        mission.monitorMission();
+    }
+}
