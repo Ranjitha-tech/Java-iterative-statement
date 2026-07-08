@@ -1,0 +1,19 @@
+class ParcelService {
+    void dispatchParcel() {
+        System.out.println("Parcel dispatched through road transport.");
+    }
+}
+
+class DroneParcelService extends ParcelService {
+    @Override
+    void dispatchParcel() {
+        System.out.println("Parcel dispatched using autonomous drone delivery.");
+    }
+}
+
+public class DroneDeliveryOverride {
+    public static void main(String[] args) {
+        ParcelService service = new DroneParcelService();
+        service.dispatchParcel();
+    }
+}
