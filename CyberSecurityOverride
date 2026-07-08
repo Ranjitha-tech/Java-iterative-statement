@@ -1,0 +1,19 @@
+class SecurityScanner {
+    void scanSystem() {
+        System.out.println("Performing basic security scan.");
+    }
+}
+
+class AIThreatScanner extends SecurityScanner {
+    @Override
+    void scanSystem() {
+        System.out.println("Performing AI-powered threat detection scan.");
+    }
+}
+
+public class CyberSecurityOverride {
+    public static void main(String[] args) {
+        SecurityScanner scanner = new AIThreatScanner();
+        scanner.scanSystem();
+    }
+}
