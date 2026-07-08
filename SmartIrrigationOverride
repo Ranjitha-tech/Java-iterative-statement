@@ -1,0 +1,19 @@
+class IrrigationSystem {
+    void startIrrigation() {
+        System.out.println("Starting regular irrigation process.");
+    }
+}
+
+class SensorBasedIrrigation extends IrrigationSystem {
+    @Override
+    void startIrrigation() {
+        System.out.println("Starting irrigation based on soil moisture data.");
+    }
+}
+
+public class SmartIrrigationOverride {
+    public static void main(String[] args) {
+        IrrigationSystem system = new SensorBasedIrrigation();
+        system.startIrrigation();
+    }
+}
