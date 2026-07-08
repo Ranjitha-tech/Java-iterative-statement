@@ -1,0 +1,19 @@
+class LibraryMember {
+    void accessResources() {
+        System.out.println("Accessing standard library resources.");
+    }
+}
+
+class ResearchScholar extends LibraryMember {
+    @Override
+    void accessResources() {
+        System.out.println("Accessing premium research journals and papers.");
+    }
+}
+
+public class DigitalLibraryOverride {
+    public static void main(String[] args) {
+        LibraryMember member = new ResearchScholar();
+        member.accessResources();
+    }
+}
