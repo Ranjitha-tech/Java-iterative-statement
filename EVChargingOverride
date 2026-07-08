@@ -1,0 +1,19 @@
+class ChargingStation {
+    void chargeVehicle() {
+        System.out.println("Charging vehicle at normal speed.");
+    }
+}
+
+class FastChargingStation extends ChargingStation {
+    @Override
+    void chargeVehicle() {
+        System.out.println("Charging vehicle using fast charging technology.");
+    }
+}
+
+public class EVChargingOverride {
+    public static void main(String[] args) {
+        ChargingStation station = new FastChargingStation();
+        station.chargeVehicle();
+    }
+}
