@@ -1,0 +1,10 @@
+public class DecimalToIntegerNarrowing {
+    public static void main(String[] args) {
+
+        double price = 459.89;
+        int roundedPrice = (int) price;
+
+        System.out.println("Original Price : " + price);
+        System.out.println("After Narrowing : " + roundedPrice);
+    }
+}
