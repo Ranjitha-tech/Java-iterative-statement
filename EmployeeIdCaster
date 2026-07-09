@@ -1,0 +1,10 @@
+public class EmployeeIdCaster {
+    public static void main(String[] args) {
+
+        long employeeId = 987654321L;
+        int shortId = (int) employeeId;
+
+        System.out.println("Employee ID (Long): " + employeeId);
+        System.out.println("Employee ID (Int): " + shortId);
+    }
+}
