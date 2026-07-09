@@ -1,0 +1,10 @@
+public class TemperatureNarrowDemo {
+    public static void main(String[] args) {
+
+        float temperature = 36.98f;
+        byte tempByte = (byte) temperature;
+
+        System.out.println("Temperature : " + temperature);
+        System.out.println("Byte Value : " + tempByte);
+    }
+}
