@@ -1,0 +1,10 @@
+public class UnicodeValueNarrowing {
+    public static void main(String[] args) {
+
+        int unicode = 66;
+        char letter = (char) unicode;
+
+        System.out.println("Unicode Value : " + unicode);
+        System.out.println("Character : " + letter);
+    }
+}
