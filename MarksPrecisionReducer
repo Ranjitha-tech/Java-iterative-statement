@@ -1,0 +1,10 @@
+public class MarksPrecisionReducer {
+    public static void main(String[] args) {
+
+        double percentage = 92.76;
+        float result = (float) percentage;
+
+        System.out.println("Percentage : " + percentage);
+        System.out.println("Float Result : " + result);
+    }
+}
