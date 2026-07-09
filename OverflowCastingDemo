@@ -1,0 +1,10 @@
+public class OverflowCastingDemo {
+    public static void main(String[] args) {
+
+        int value = 140;
+        byte converted = (byte) value;
+
+        System.out.println("Original Value : " + value);
+        System.out.println("After Casting to Byte : " + converted);
+    }
+}
