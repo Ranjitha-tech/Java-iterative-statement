@@ -1,0 +1,21 @@
+class Person {
+    void displayRole() {
+        System.out.println("Person belongs to university.");
+    }
+}
+
+class Student extends Person {
+    void study() {
+        System.out.println("Student is studying.");
+    }
+}
+
+public class UniversityMemberUpcasting {
+
+    public static void main(String[] args) {
+
+        Person person = new Student(); // Upcasting
+
+        person.displayRole();
+    }
+}
