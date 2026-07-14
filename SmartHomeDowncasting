@@ -1,0 +1,23 @@
+class SmartDevice {
+    void powerOn() {
+        System.out.println("Smart device is powered on.");
+    }
+}
+
+class SmartLight extends SmartDevice {
+    void changeBrightness(int level) {
+        System.out.println("Brightness set to " + level + "%");
+    }
+}
+
+public class SmartHomeDowncasting {
+    public static void main(String[] args) {
+
+        SmartDevice device = new SmartLight();   // Upcasting
+
+        device.powerOn();
+
+        SmartLight light = (SmartLight) device;  // Downcasting
+        light.changeBrightness(80);
+    }
+}
