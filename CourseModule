@@ -1,0 +1,24 @@
+class CourseModule {
+    void moduleInfo() {
+        System.out.println("Course module loaded.");
+    }
+}
+
+class CodingModule extends CourseModule {
+    void runCompiler() {
+        System.out.println("Java compiler launched successfully.");
+    }
+}
+
+public class LearningModuleDowncasting {
+
+    public static void main(String[] args) {
+
+        CourseModule module = new CodingModule();
+
+        module.moduleInfo();
+
+        CodingModule coding = (CodingModule) module;
+        coding.runCompiler();
+    }
+}
