@@ -1,0 +1,25 @@
+class FlyingMachine {
+    void startEngine() {
+        System.out.println("Engine Started");
+    }
+}
+
+class SurveyDrone extends FlyingMachine {
+    void surveyArea() {
+        System.out.println("Survey Mission Started");
+    }
+}
+
+public class DroneMissionCasting {
+
+    public static void main(String[] args) {
+
+        FlyingMachine machine = new SurveyDrone();
+
+        machine.startEngine();
+
+        SurveyDrone drone = (SurveyDrone) machine;
+
+        drone.surveyArea();
+    }
+}
