@@ -1,0 +1,23 @@
+class AreaDesigner {
+
+    void area(int side) {
+        System.out.println("Square Area: " + (side * side));
+    }
+
+    void area(int length, int width) {
+        System.out.println("Rectangle Area: " + (length * width));
+    }
+
+    void area(double radius) {
+        System.out.println("Circle Area: " + (3.14 * radius * radius));
+    }
+
+    public static void main(String[] args) {
+
+        AreaDesigner obj = new AreaDesigner();
+
+        obj.area(5);
+        obj.area(6, 8);
+        obj.area(3.5);
+    }
+}
