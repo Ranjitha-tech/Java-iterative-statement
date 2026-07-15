@@ -1,0 +1,23 @@
+class ScoreAnalyzer {
+
+    void score(int theory) {
+        System.out.println("Theory Marks: " + theory);
+    }
+
+    void score(int theory, int practical) {
+        System.out.println("Total Marks: " + (theory + practical));
+    }
+
+    void score(String grade) {
+        System.out.println("Grade: " + grade);
+    }
+
+    public static void main(String[] args) {
+
+        ScoreAnalyzer obj = new ScoreAnalyzer();
+
+        obj.score(78);
+        obj.score(78, 18);
+        obj.score("A");
+    }
+}
