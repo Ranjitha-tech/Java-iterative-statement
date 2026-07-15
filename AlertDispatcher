@@ -1,0 +1,23 @@
+class AlertDispatcher {
+
+    void send(String email) {
+        System.out.println("Email sent to " + email);
+    }
+
+    void send(long mobile) {
+        System.out.println("SMS sent to " + mobile);
+    }
+
+    void send(String email, String subject) {
+        System.out.println("Email sent to " + email + " | Subject: " + subject);
+    }
+
+    public static void main(String[] args) {
+
+        AlertDispatcher obj = new AlertDispatcher();
+
+        obj.send("user@gmail.com");
+        obj.send(9876543210L);
+        obj.send("admin@gmail.com", "Project Update");
+    }
+}
