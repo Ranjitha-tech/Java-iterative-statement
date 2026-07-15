@@ -1,0 +1,23 @@
+class FareEstimator {
+
+    void fare(int distance) {
+        System.out.println("Bike Fare: " + (distance * 8));
+    }
+
+    void fare(int distance, int passengers) {
+        System.out.println("Cab Fare: " + (distance * passengers * 10));
+    }
+
+    void fare(double premiumDistance) {
+        System.out.println("Premium Ride Fare: " + (premiumDistance * 15));
+    }
+
+    public static void main(String[] args) {
+
+        FareEstimator obj = new FareEstimator();
+
+        obj.fare(12);
+        obj.fare(15, 2);
+        obj.fare(18.5);
+    }
+}
