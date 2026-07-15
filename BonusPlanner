@@ -1,0 +1,23 @@
+class BonusPlanner {
+
+    void bonus(int salary) {
+        System.out.println("Bonus: " + (salary * 10 / 100));
+    }
+
+    void bonus(int salary, int performance) {
+        System.out.println("Performance Bonus: " + ((salary * performance) / 100));
+    }
+
+    void bonus(double salary) {
+        System.out.println("Executive Bonus: " + (salary * 0.15));
+    }
+
+    public static void main(String[] args) {
+
+        BonusPlanner obj = new BonusPlanner();
+
+        obj.bonus(50000);
+        obj.bonus(50000, 20);
+        obj.bonus(95000.0);
+    }
+}
