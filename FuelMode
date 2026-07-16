@@ -1,0 +1,19 @@
+class Vehicle {
+    void fuelType() {
+        System.out.println("Vehicle uses standard fuel.");
+    }
+}
+
+class ElectricVehicle extends Vehicle {
+    @Override
+    void fuelType() {
+        System.out.println("Vehicle runs on electricity.");
+    }
+}
+
+public class FuelModeSwitcher {
+    public static void main(String[] args) {
+        Vehicle vehicle = new ElectricVehicle();
+        vehicle.fuelType();
+    }
+}
