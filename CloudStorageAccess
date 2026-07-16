@@ -1,0 +1,19 @@
+class Storage {
+    void connect() {
+        System.out.println("Connecting to default storage.");
+    }
+}
+
+class GoogleDriveStorage extends Storage {
+    @Override
+    void connect() {
+        System.out.println("Connected to Google Drive.");
+    }
+}
+
+public class CloudStorageAccess {
+    public static void main(String[] args) {
+        Storage storage = new GoogleDriveStorage();
+        storage.connect();
+    }
+}
