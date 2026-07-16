@@ -1,0 +1,19 @@
+class DeliveryService {
+    void deliver() {
+        System.out.println("Standard delivery selected.");
+    }
+}
+
+class ExpressDelivery extends DeliveryService {
+    @Override
+    void deliver() {
+        System.out.println("Express delivery will arrive soon.");
+    }
+}
+
+public class MealDeliverySelector {
+    public static void main(String[] args) {
+        DeliveryService service = new ExpressDelivery();
+        service.deliver();
+    }
+}
