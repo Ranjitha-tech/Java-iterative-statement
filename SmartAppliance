@@ -1,0 +1,19 @@
+class Appliance {
+    void operate() {
+        System.out.println("Operating a generic appliance.");
+    }
+}
+
+class SmartFan extends Appliance {
+    @Override
+    void operate() {
+        System.out.println("Smart fan adjusts speed automatically.");
+    }
+}
+
+public class SmartApplianceControl {
+    public static void main(String[] args) {
+        Appliance appliance = new SmartFan();
+        appliance.operate();
+    }
+}
