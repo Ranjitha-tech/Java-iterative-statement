@@ -1,0 +1,19 @@
+class Membership {
+    void benefits() {
+        System.out.println("Basic gym access.");
+    }
+}
+
+class PremiumMembership extends Membership {
+    @Override
+    void benefits() {
+        System.out.println("Premium access with personal trainer.");
+    }
+}
+
+public class FitnessMembershipUpgrade {
+    public static void main(String[] args) {
+        Membership member = new PremiumMembership();
+        member.benefits();
+    }
+}
