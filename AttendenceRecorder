@@ -1,0 +1,21 @@
+abstract class Attendance {
+    abstract void markAttendance();
+
+    void welcome() {
+        System.out.println("Employee Attendance Portal");
+    }
+}
+
+class OfficeAttendance extends Attendance {
+    void markAttendance() {
+        System.out.println("Attendance marked successfully.");
+    }
+}
+
+public class AttendanceRecorder {
+    public static void main(String[] args) {
+        Attendance attendance = new OfficeAttendance();
+        attendance.welcome();
+        attendance.markAttendance();
+    }
+}
