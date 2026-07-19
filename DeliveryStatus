@@ -1,0 +1,21 @@
+abstract class DeliveryStatus {
+    abstract void updateStatus();
+
+    void company() {
+        System.out.println("Food Delivery Service");
+    }
+}
+
+class OutForDelivery extends DeliveryStatus {
+    void updateStatus() {
+        System.out.println("Your order is out for delivery.");
+    }
+}
+
+public class DeliveryStatusTracker {
+    public static void main(String[] args) {
+        DeliveryStatus status = new OutForDelivery();
+        status.company();
+        status.updateStatus();
+    }
+}
