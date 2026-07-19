@@ -1,0 +1,21 @@
+abstract class ParkingSlot {
+    abstract void allocateSlot();
+
+    void parkingInfo() {
+        System.out.println("Smart Parking System");
+    }
+}
+
+class BikeSlot extends ParkingSlot {
+    void allocateSlot() {
+        System.out.println("Bike slot allocated.");
+    }
+}
+
+public class ParkingSlotManager {
+    public static void main(String[] args) {
+        ParkingSlot slot = new BikeSlot();
+        slot.parkingInfo();
+        slot.allocateSlot();
+    }
+}
