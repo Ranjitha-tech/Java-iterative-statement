@@ -1,0 +1,21 @@
+abstract class Membership {
+    abstract void membershipDetails();
+
+    void libraryName() {
+        System.out.println("City Central Library");
+    }
+}
+
+class StudentMembership extends Membership {
+    void membershipDetails() {
+        System.out.println("Student Membership: Valid for 1 year.");
+    }
+}
+
+public class LibraryMembershipDemo {
+    public static void main(String[] args) {
+        Membership member = new StudentMembership();
+        member.libraryName();
+        member.membershipDetails();
+    }
+}
