@@ -1,0 +1,21 @@
+abstract class FitnessActivity {
+    abstract void calculateCalories();
+
+    void appName() {
+        System.out.println("Fitness Tracker");
+    }
+}
+
+class RunningActivity extends FitnessActivity {
+    void calculateCalories() {
+        System.out.println("Calories burned: 420");
+    }
+}
+
+public class FitnessActivityMonitor {
+    public static void main(String[] args) {
+        FitnessActivity activity = new RunningActivity();
+        activity.appName();
+        activity.calculateCalories();
+    }
+}
