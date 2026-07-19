@@ -1,0 +1,21 @@
+abstract class WeatherAlert {
+    abstract void sendAlert();
+
+    void displayType() {
+        System.out.println("Weather Notification");
+    }
+}
+
+class RainAlert extends WeatherAlert {
+    void sendAlert() {
+        System.out.println("Heavy rain expected. Carry an umbrella.");
+    }
+}
+
+public class WeatherAlertDemo {
+    public static void main(String[] args) {
+        WeatherAlert alert = new RainAlert();
+        alert.displayType();
+        alert.sendAlert();
+    }
+}
