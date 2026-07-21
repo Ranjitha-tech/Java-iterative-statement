@@ -1,0 +1,17 @@
+interface LibraryAccess {
+    void borrowBook(String book);
+}
+
+class StudentMember implements LibraryAccess {
+
+    public void borrowBook(String book) {
+        System.out.println("Borrowed: " + book);
+    }
+}
+
+public class DigitalLibraryAccess {
+    public static void main(String[] args) {
+        LibraryAccess user = new StudentMember();
+        user.borrowBook("Java Programming");
+    }
+}
