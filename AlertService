@@ -1,0 +1,17 @@
+interface AlertService {
+    void sendAlert(String city);
+}
+
+class RainAlert implements AlertService {
+
+    public void sendAlert(String city) {
+        System.out.println("Heavy rain warning issued for " + city);
+    }
+}
+
+public class WeatherAlertDispatcher {
+    public static void main(String[] args) {
+        AlertService service = new RainAlert();
+        service.sendAlert("Bangalore");
+    }
+}
