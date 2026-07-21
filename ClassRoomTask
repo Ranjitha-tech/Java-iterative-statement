@@ -1,0 +1,17 @@
+interface ClassroomTask {
+    void performTask();
+}
+
+class AttendanceBot implements ClassroomTask {
+
+    public void performTask() {
+        System.out.println("Attendance completed automatically.");
+    }
+}
+
+public class VirtualClassroomAssistant {
+    public static void main(String[] args) {
+        ClassroomTask bot = new AttendanceBot();
+        bot.performTask();
+    }
+}
