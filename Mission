@@ -1,0 +1,23 @@
+interface Mission {
+    void launch();
+    void returnToBase();
+}
+
+class DeliveryDrone implements Mission {
+
+    public void launch() {
+        System.out.println("Drone launched for medicine delivery.");
+    }
+
+    public void returnToBase() {
+        System.out.println("Drone safely returned to base.");
+    }
+}
+
+public class DroneMissionPlanner {
+    public static void main(String[] args) {
+        Mission drone = new DeliveryDrone();
+        drone.launch();
+        drone.returnToBase();
+    }
+}
