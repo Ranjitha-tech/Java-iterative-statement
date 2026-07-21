@@ -1,0 +1,17 @@
+interface ChargingStation {
+    void charge(int percentage);
+}
+
+class FastCharger implements ChargingStation {
+
+    public void charge(int percentage) {
+        System.out.println("Battery charged to " + percentage + "%");
+    }
+}
+
+public class ElectricVehicleCharging {
+    public static void main(String[] args) {
+        ChargingStation station = new FastCharger();
+        station.charge(80);
+    }
+}
