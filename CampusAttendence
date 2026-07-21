@@ -1,0 +1,17 @@
+interface Attendance {
+    void markAttendance(String usn);
+}
+
+class QRScanner implements Attendance {
+
+    public void markAttendance(String usn) {
+        System.out.println("Attendance marked for " + usn);
+    }
+}
+
+public class CampusAttendanceScanner {
+    public static void main(String[] args) {
+        Attendance scan = new QRScanner();
+        scan.markAttendance("4KM22CS082");
+    }
+}
