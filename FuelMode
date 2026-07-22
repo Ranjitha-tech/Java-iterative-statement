@@ -16,4 +16,4 @@ public class FuelModeSwitcher {
         Vehicle vehicle = new ElectricVehicle();
         vehicle.fuelType();
     }
-}
+}git

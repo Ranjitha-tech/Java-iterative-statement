@@ -1,0 +1,22 @@
+abstract class Charger {
+    abstract void charge();
+
+    void powerOn() {
+        System.out.println("Power Connected");
+    }
+}
+
+class MobileCharger extends Charger {
+    @Override
+    void charge() {
+        System.out.println("Charging Mobile...");
+    }
+}
+
+public class PrismChargeSimulator {
+    public static void main(String[] args) {
+        Charger c = new MobileCharger();
+        c.powerOn();
+        c.charge();
+    }
+}
