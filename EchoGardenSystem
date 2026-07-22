@@ -1,0 +1,23 @@
+abstract class Plant {
+    abstract void grow();
+
+    void water() {
+        System.out.println("Watering Plant");
+    }
+}
+
+class Rose extends Plant {
+
+    @Override
+    void grow() {
+        System.out.println("Rose is blooming beautifully.");
+    }
+}
+
+public class EchoGardenSystem {
+    public static void main(String[] args) {
+        Plant p = new Rose();
+        p.water();
+        p.grow();
+    }
+}
