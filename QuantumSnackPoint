@@ -1,0 +1,23 @@
+abstract class Snack {
+    abstract void prepare();
+
+    void payment() {
+        System.out.println("Payment Successful.");
+    }
+}
+
+class Burger extends Snack {
+
+    @Override
+    void prepare() {
+        System.out.println("Burger Prepared.");
+    }
+}
+
+public class QuantumSnackPoint {
+    public static void main(String[] args) {
+        Snack s = new Burger();
+        s.payment();
+        s.prepare();
+    }
+}
