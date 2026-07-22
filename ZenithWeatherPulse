@@ -1,0 +1,23 @@
+abstract class Weather {
+    abstract void report();
+
+    void location() {
+        System.out.println("Location: Bangalore");
+    }
+}
+
+class RainWeather extends Weather {
+
+    @Override
+    void report() {
+        System.out.println("Rain Expected Today.");
+    }
+}
+
+public class ZenithWeatherPulse {
+    public static void main(String[] args) {
+        Weather w = new RainWeather();
+        w.location();
+        w.report();
+    }
+}
