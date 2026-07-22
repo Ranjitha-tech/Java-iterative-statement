@@ -1,0 +1,23 @@
+abstract class Parcel {
+    abstract void deliver();
+
+    void tracking() {
+        System.out.println("Tracking Parcel...");
+    }
+}
+
+class ExpressParcel extends Parcel {
+
+    @Override
+    void deliver() {
+        System.out.println("Express Parcel Delivered.");
+    }
+}
+
+public class NovaParcelFlow {
+    public static void main(String[] args) {
+        Parcel p = new ExpressParcel();
+        p.tracking();
+        p.deliver();
+    }
+}
