@@ -1,0 +1,23 @@
+abstract class Note {
+    abstract void save();
+
+    void open() {
+        System.out.println("Opening Note...");
+    }
+}
+
+class PersonalNote extends Note {
+
+    @Override
+    void save() {
+        System.out.println("Personal Note Saved.");
+    }
+}
+
+public class OrbitNoteVault {
+    public static void main(String[] args) {
+        Note n = new PersonalNote();
+        n.open();
+        n.save();
+    }
+}
